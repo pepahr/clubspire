@@ -1,0 +1,377 @@
+<resources>
+    <!-- menu -->
+    <string name="menu_open">Otevřít</string>
+    <string name="menu_close">Zavřít</string>
+    <string name="menu_my_account_button">Můj účet</string>
+    <string name="menu_my_profile_button">Můj profil</string>
+    <string name="menu_my_reservations_button">Moje rezervace</string>
+    <string name="menu_qr_button">QR kód</string>
+    <string name="menu_notifications_button">Oznámení</string>
+    <string name="menu_log_out_button">Odhlásit</string>
+    <string name="menu_contact_button">Kontakt</string>
+
+    <!-- login -->
+    <string name="login_login_label">Přihlašovací jméno</string>
+    <string name="login_password_label">Heslo</string>
+    <string name="login_login_button">Přihlásit</string>
+    <string name="login_register_button">Registrovat</string>
+    <string name="login_forgot_password_button">Zapomněli jste své heslo?</string>
+    <string name="login_invalid_credentials_error">Přihlašovací údaje jsou neplatné! Pokud problém přetrvává, kontaktujte Vaše centrum.</string>
+    <string name="login_persistent_label">Trvalé přihlášení</string>
+
+    <!--registration-->
+    <string name="registration_title">Registrace</string>
+    <string name="registration_credentials_label">Přihlašovací údaje</string>
+    <string name="registration_password_label">Heslo</string>
+    <string name="registration_password_check_label">Heslo znovu</string>
+    <string name="registration_agree_terms_and_conditions_label">souhlasím s <u>provozním řádem a se zpracováním osobních údajů</u> *</string>
+    <string name="registration_terms_and_conditions_error">Musíte souhlasit s provozním řádem a zpracováním osobních údajů</string>
+
+    <!-- activation -->
+    <string name="activation_title">Aktivace učtu</string>
+
+    <!-- reset password -->
+    <string name="reset_password_title">Obnovení hesla</string>
+    <string name="reset_password_perex">Do pole níže zadejte váš e-mail, který jste uvedli při registraci. Zašleme Vám na něj odkaz pro vygenerování nového hesla.</string>
+    <string name="reset_password_email_label">E-mail</string>
+    <string name="reset_password_send_password_button">Zaslat odkaz</string>
+    <string name="reset_password_new_password_label">Nové heslo</string>
+    <string name="reset_password_check_password_label">Heslo znovu</string>
+    <string name="reset_password_change_button">Změnit heslo</string>
+    <string name="reset_password_token_link_is_invalid_error">Odkaz na změnu hesla je neplatný</string>
+
+    <!--dashboard -->
+    <string name="dash_board_my_reservations_label">Moje rezervace</string>
+    <string name="dash_board_latest_news_label">Novinky</string>
+    <string name="dash_board_no_reservations">Nemáte žádné rezervace</string>
+    <string name="dash_board_no_news">Žádné novinky</string>
+    <string name="dash_board_no_favorite_activities">Nemáte žádné oblíbené aktivity</string>
+
+    <!-- news -->
+    <string name="news_title">Novinky</string>
+
+    <!--notifications-->
+    <string name="notification_title">Oznámení</string>
+    <string name="notification_no_notifications">Nemáte žádné oznámení</string>
+    <string name="notification_dismissed">Oznámení archivováno</string>
+    <string name="notification_read">Oznámení označeno jako přečtené</string>
+    <string name="notification_default_channel_name" translatable="true">Oznámení</string>
+    <string name="notification_reservation_channel_name" translatable="true">Rezervace</string>
+    <string name="notification_account_channel_name" translatable="true">Můj účet</string>
+    <string name="notification_news_channel_name" translatable="true">Novinky</string>
+    <string name="notification_show_button">Zobrazit</string>
+
+    <!--payments-->
+    <string name="payment_title">Platba</string>
+    <string name="payment_deposit_payment">Platba z depozitu</string>
+    <string name="payment_deposit_balance_label">aktuální stav depozitu</string>
+    <string name="payment_amount_for_payment_label">částka k úhradě</string>
+    <string name="payment_deposit_balance_after_reservation_payment_label">depozit po zaplacení</string>
+    <string name="payment_credit_card_payment">Platba online</string>
+    <string name="payment_credit_cart_redirection">Po kliknutí budete přesměrování na platební bránu</string>
+    <string name="payment_pay_button">Zaplatit</string>
+    <string name="payment_charge_button">Dobít</string>
+    <string name="payment_amount_with_tax_label">Částka vč. DPH</string>
+    <string name="payment_action_label">Vykonat akci</string>
+    <string name="payment_no_payment_type_selected">Neni vybrán typ platby</string>
+    <string name="payment_insufficient_deposit">Pro platbu nemáte dostatečný depozit</string>
+    <string name="payment_no_payment_type_allowed">Pro platbu není možné využít žádný typ platby</string>
+
+    <!-- my account -->
+    <string name="my_account_title">Můj účet</string>
+
+    <!--deposit-->
+    <string name="deposit_title">Depozit</string>
+    <string name="deposit_charge_title">Dobít depozit</string>
+    <string name="deposit_deposit_label">Aktuální stav depozitu</string>
+    <string name="deposit_add">vklad</string>
+    <string name="deposit_withdraw">výběr</string>
+    <string name="deposit_add_cancellation">storno vkladu</string>
+    <string name="deposit_withdraw_cancellation">storno výběru</string>
+    <string name="deposit_expiration">expirace depozitu</string>
+    <string name="deposit_withdraw_deposit_balance">výběr zůstatku depositu</string>
+    <string name="deposit_withdraw_deposit_balance_cancellation">storno výběru zůstatku depozitu</string>
+    <string name="deposit_expiration_cancellation">storno expirace depositu</string>
+    <string name="deposit_not_defined">n/a</string>
+    <string name="deposit_valid_to_label">Platnost do</string>
+    <string name="deposit_minimal_value_error">Částka musí být kladné číslo</string>
+
+    <!-- season_ticket -->
+    <string name="season_ticket_title">Permanentky</string>
+    <string name="season_ticket_no_season_ticket">Nemáte žádné permanentky</string>
+    <string name="season_ticket_buy_title">Koupit permanentku</string>
+    <string name="season_ticket_detail_title">Permanentka</string>
+    <string name="season_ticket_valid_from_label">Platnost od</string>
+    <string name="season_ticket_valid_to_label">Platnost do</string>
+    <string name="season_ticket_remains_label">Zbývá</string>
+    <string name="season_ticket_structure_label">Složení</string>
+    <string name="season_ticket_history">Historie čerpání</string>
+    <string name="season_ticket_form_choose_season_ticket_label">Vyberte permanentku</string>
+    <string name="season_ticket_form_validity_label">Platná do</string>
+    <string name="season_ticket_form_price_label">Cena</string>
+    <string name="season_ticket_without_limitation">bez omezení</string>
+    <string name="season_ticket_item_valid_to_label">platná do</string>
+    <string name="season_ticket_item_paid_label">zaplaceno</string>
+    <string name="season_ticket_item_availability_label">jednotek</string>
+
+    <!--membership-->
+    <string name="memberships_title">Členství</string>
+    <string name="membership_payment_label">Platba členství</string>
+    <string name="membership_buy_title">Koupit členství</string>
+    <string name="membership_choose_membership_label">Vyberte členství</string>
+    <string name="membership_choose_membership_type_label">Vyberte typ členství</string>
+    <string name="membership_valid_from_label">Platnost od</string>
+    <string name="membership_repayment_label">Splatka členství</string>
+    <string name="membership_price_label">Cena</string>
+    <string name="membership_no_membership">Nemáte žádné členství</string>
+    <string name="membership_history">historie</string>
+    <string name="membership_due_date">splatnost</string>
+    <string name="membership_paid">zaplaceno</string>
+    <string name="membership_unpaid">nezaplaceno</string>
+
+    <!-- my profile -->
+    <string name="my_profile_edit_title">Editace profilu</string>
+    <string name="my_profile_username_label">Uživatelské jméno</string>
+    <string name="my_profile_name_label">Jméno</string>
+    <string name="my_profile_surname_label">Příjmení</string>
+    <string name="my_profile_street_label">Ulice</string>
+    <string name="my_profile_no_label">Č. p.</string>
+    <string name="my_profile_city_label">Město</string>
+    <string name="my_profile_zip_code_label">PSČ</string>
+    <string name="my_profile_country_label">Stát</string>
+    <string name="my_profile_phone_code_label">Předvolba</string>
+    <string name="my_profile_phone_label">Telefon</string>
+    <string name="my_profile_email_label">E-mail</string>
+    <string name="my_profile_date_of_birth_label">Datum narození</string>
+    <string name="my_profile_sex_label">Pohlaví</string>
+    <string name="my_profile_password_label">Heslo k účtu</string>
+    <string name="my_profile_current_password_label">Stávající heslo</string>
+    <string name="my_profile_new_password_label">Nové heslo</string>
+    <string name="my_profile_password_check_label">Heslo znovu</string>
+    <string name="my_profile_woman_label">žena</string>
+    <string name="my_profile_man_label">muž</string>
+    <string name="my_profile_save_button">Uložit</string>
+    <string name="my_profile_birthday_error">Chyba při ukládaní data narození</string>
+
+    <!--contact -->
+    <string name="contact_title">Kontakty</string>
+    <string name="contact_address_label">Adresa</string>
+    <string name="contact_contact_label">Kontakt</string>
+    <string name="contact_web_label">Web</string>
+    <string name="contact_social_label">Sociální sítě</string>
+
+    <!-- my reservations -->
+    <string name="my_reservation_title">Moje rezervace</string>
+    <string name="my_reservation_actual_title">Aktuální</string>
+    <string name="my_reservation_history_title">Historie</string>
+    <string name="my_reservation_substitute_title">Náhradník</string>
+
+    <!-- reservation -->
+    <string name="reservation_reservable_title">Zvolte činnost</string>
+    <string name="reservation_week_schedule_title">Týdenní rozvrh</string>
+    <string name="reservation_title">Rezervace</string>
+    <string name="reservation_substitute_title">Rezervace jako náhradník</string>
+    <string name="reservation_submit_button">Rezervovat</string>
+    <string name="reservation_pay_button">K platbě</string>
+    <string name="reservation_update_button">Uložit</string>
+    <string name="reservation_cancel_button">Stornovat</string>
+    <string name="reservation_create_and_send_notification">Při uvolnění místa automaticky rezervovat</string>
+    <string name="reservation_just_send_notification">Pouze zaslat upozornění</string>
+    <string name="reservation_automatic_acceptance">V případě, že se uvolní místo, chci být závazně rezervován nejpozději X hodin předem</string>
+    <string name="reservation_choose_sport_label">Zvolte činnost</string>
+    <string name="reservation_note_label">Poznámka</string>
+    <string name="reservation_total_label">Celkem</string>
+    <string name="reservation_count_label">Počet osob</string>
+    <string name="reservation_duration_label">Délka</string>
+    <string name="reservation_status_new">nová</string>
+    <string name="reservation_status_substitute">náhradník</string>
+    <string name="reservation_status_paid">zaplacená</string>
+    <string name="reservation_status_unpaid">nezaplacená</string>
+    <string name="reservation_status_canceled">stornovaná</string>
+    <string name="reservation_was_canceled">Rezervace byla zrušena</string>
+    <string name="reservation_is_over">Lekce již proběhla</string>
+    <string name="reservation_is_now">Lekce právě probíhá</string>
+    <string name="reservation_not_reservable">Rezervaci nelze provést</string>
+    <string name="reservation_search_button">Vyhledat</string>
+    <string name="searchable_hint">Vyhledávání</string>
+    <string name="reservation_select_date_button">Změnit datum</string>
+    <string name="reservation_cancel_confirm">Opravdu chcete stornovat tuto rezervaci?</string>
+    <string name="reservation_update_confirm">Opravdu chcete upravit tuto rezervaci?</string>
+    <string name="reservation_cancellation_fee_confirm">Tato akce je nevratná a může být účtován storno poplatek ve výši</string>
+    <string name="reservation_waiting_cancellation_fee_confim">Tato akce je nevratná a může být účtován čekající storno poplatek ve výši</string>
+    <string name="reservation_substitute_reservation_confirm">Po rezervaci vám bude zasláno upozornění</string>
+    <string name="reservation_update_fee_confirm">Tato akce je nevratná a může být účtován poplatek ve výši</string>
+    <string name="reservation_no_lessons">Ve vybraném termínu již nejsou žádné lekce. Vyberte prosím další následující termín.</string>
+    <string name="reservation_person_label">osoba</string>
+    <string name="reservation_minimal_label">min</string>
+    <string name="reservation_place_label">Místnost</string>
+    <string name="reservation_sport_label">Činnost</string>
+    <string name="reservation_cannot_change_week_error">Nelze nastavit týden v minulosti</string>
+    <string name="reservation_cannot_change_day_error">Nelze nastavit den v minulosti</string>
+    <string name="reservation_whole_schedule">Celý rozvrh</string>
+
+    <!-- TnC -->
+    <string name="terms_and_conditions_title">Provozní řád</string>
+
+    <!-- QR code -->
+    <string name="qr_code_label">QR kód</string>
+    <string name="show_qr_code_label">ZOBRAZ\nQR KÓD</string>
+
+    <!-- all -->
+    <string name="all_cancel">Zrušit</string>
+    <string name="all_ok">OK</string>
+    <string name="all_invalid_password">Heslo musí mít alespoň 6 znaků</string>
+    <string name="all_invalid_password_check">Hesla se neshodují</string>
+    <string name="all_invalid_email">Neplatný e-mail</string>
+    <string name="all_required_field">Toto pole je povinné</string>
+    <string name="all_unauthenticated">Platnost vašeho přihlášení vypršela</string>
+    <string name="all_error_api">Váš požadavek nemohl být vyřízen. Zkuste to prosím znovu.</string>
+    <string name="all_no_api_connection">Rezervační systém není dostupný</string>
+    <string name="all_no_internet_connection">Nejste připojeni k internetu</string>
+
+    <string-array name="all_phone_codes">
+        <item>+420</item>
+        <item>+421</item>
+    </string-array>
+    <string-array name="all_state_names">
+        <item>Česko</item>
+        <item>Slovensko</item>
+    </string-array>
+    <string-array name="all_state_codes">
+        <item>CZ</item>
+        <item>SK</item>
+    </string-array>
+    <string name="my_profile_registration_number_label">Registrační číslo</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="free_places">volná místa</string>
+    <string name="free_place">volné místo</string>
+    <string name="free_places_more_than_four">volných míst</string>
+    <string name="unlimited">neomezeně</string>
+    <string name="terms_and_conditions_label">Obchodní podmínky</string>
+    <string name="contact_terms_and_conditions">provozní řád a obchodní podmínky</string>
+    <string name="valid_unlimited">Platný neomezeně</string>
+    <string name="reservation_status_realised">realizována</string>
+    <string name="my_profile_registration_legend">*povinná pole</string>
+    <string name="menu_price_list_button">Ceník</string>
+    <string name="menu_information_label">Informace</string>
+    <string name="menu_members_section_button">Členská sekce</string>
+    <string name="menu_help_button">Nápověda</string>
+    <string name="menu_faq_button">Často kladené otázky</string>
+    <string name="menu_gdpr_button">Soukromí</string>
+    <string name="menu_terms_button">Obchodní podmínky</string>
+
+    <string name="price_list_label">Ceník</string>
+    <string name="members_section_label">Členská sekce</string>
+    <string name="help_label">Nápověda</string>
+    <string name="faq_label">Často kladené otázky</string>
+    <string name="gdpr_label">Soukromí</string>
+
+    <string name="no_activity_dates_available_in_three_months">V následujících tří měsících nejsou dostupné žádné termíny této činnosti.</string>
+    <string name="redirection_to_available_lesson_date">Probíhá přesměrování na první dostupný termín činnosti.</string>
+    <string name="reservation_get_information_button">Otevřít informace o aktivitě</string>
+    <string name="buy_membership">Koupit členství</string>
+    <string name="buy_season_ticket">Koupit permanentku</string>
+    <string name="add_deposit">Dobít depozit</string>
+    <string name="new_reservation">Nová rezervace</string>
+    <string name="agree_with_terms_and_conditions">Kliknutím na zaplatit souhlasíte s <u>obchodními podmínkami</u>.</string>
+    <string name="agree_with_terms_and_conditions_deposit">Kliknutím na dobít souhlasíte s <u>obchodními podmínkami</u>.</string>
+    <string name="payment_season_ticket_payment">Platba permanentkou</string>
+    <string name="payment_season_ticket_amount_of_usable_impulses">použitelných impulzů</string>
+    <string name="payment_season_ticket_amount_of_impulses_after_payment">impulzů po zaplacení</string>
+    <string name="payment_season_ticket_amount_of_needed_impulses">potřebných impulzů</string>
+    <string name="warning_more_sports">Varování: Vytváříte rezervaci, která prochází přes více pásem otevírací doby objektu. Cena se může lišit!</string>
+    <string name="error_deactivation_failed">Nepodařilo se vymazat uživatele. Zkuste to prosím znovu.</string>
+    <string name="user_deactivated">Uživatel byl úspěšně vymazán.</string>
+    <string name="user_deactivate_confirm">Opravdu chcete vymazat Váš uživatelský účet?</string>
+    <string name="reservation_too_late">Nelze vytvořit rezervaci takto pozdě před začátkem!</string>
+</resources>

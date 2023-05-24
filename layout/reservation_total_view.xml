@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:showIn="@layout/activity_reservation">
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/reservation_total_price_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="reservation_total_price_label,reservation_total_price"/>
+
+    <TextView
+        android:id="@+id/reservation_total_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:text="@string/reservation_total_label"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/reservation_action_barrier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="Celkem"/>
+
+    <TextView
+        android:id="@+id/reservation_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/reservation_action_barrier"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="1000,-"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/reservation_total_price_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="reservation_total_price_label,reservation_total_price"/>
+
+</merge>

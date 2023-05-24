@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1580b3</color>
+    <color name="colorPrimaryDark">#0f628b</color>
+
+    <color name="colorAccent">#f27833</color>
+    <color name="colorAccentSecondary">#f27833</color>
+
+    <color name="colorText">#4a4a4a</color>
+    <color name="colorTextLight">#ffffff</color>
+    <color name="colorScheduleDatePicker">@color/colorTextLight</color>
+    <color name="colorTabStrip">@color/colorTextLight</color>
+
+    <color name="colorButtonBackground">#1580b3</color>
+    <color name="colorButtonText">#ffffff</color>
+    <color name="colorLoginButtonText">@color/colorButtonText</color>
+    <color name="colorCheckbox">@color/colorPrimary</color>
+    <color name="colorHeart">#ffffff</color>
+    <color name="colorButtonBenefitsBackground">@color/colorAccent</color>
+    <color name="colorFavouriteItem">@color/colorTextLight</color>
+    <color name="colorActivityItem">@color/colorAccent</color>
+    <color name="colorActivityItemText">@color/colorText</color>
+    <color name="colorReservableCardBackground">#ffffff</color>
+    <color name="colorActivitiesBackground">@color/White</color>
+    <color name="colorWeekTermText">#000000</color>
+    <color name="colorRequiredItemForm">#ee0000</color>
+    <color name="colorReservationSport">@color/colorPrimaryDark</color>
+    <color name="colorNewsStory">@color/colorPrimaryDark</color>
+    <color name="colorBackgroundHome">@color/colorPrimary</color>
+
+    <color name="colorDashboardGradientStart">#DD494949
+    </color> <!-- colorDashboard s prefixem dd a +1 v kazde slozce-->
+    <color name="colorDashboardGradientEnd">#484848</color> <!-- colorDashboard -->
+
+    <!--Nespecifikovano-->
+    <color name="colorToolbarGradientStart">@color/colorPrimary</color>
+    <color name="colorToolbarGradientEnd">@color/colorPrimary</color>
+
+    <color name="colorAccentContrast">#ffffff</color>
+    <color name="colorAccentSecondaryContrast">#ffffff</color>
+
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorBackgroundSecondary">#bdbdbd</color>
+    <color name="colorBackgroundDark">#000000</color>
+
+    <color name="colorTextPositive">#2ecc40</color>
+    <color name="colorTextNegative">#ff4136</color>
+
+    <color name="colorButtonSecondaryBackground">#1580b3</color>
+    <color name="colorButtonSecondaryText">#ffffff</color>
+    <color name="colorButtonNegativeBackground">#ff4136</color>
+    <color name="colorButtonNegativeText">#ffffff</color>
+    <color name="colorButtonNeutralBackground">#717171</color>
+    <color name="colorButtonNeutralText">#ffffff</color>
+
+    <color name="colorDivider">#e0e0e0</color>
+
+    <color name="colorReservationFull">#ff4136</color>
+    <color name="colorReservationMyReservation">#2ecc40</color>
+    <color name="colorReservationMySubstitution">#f27833</color>
+    <color name="colorReservationBlocked">#1580b3</color>
+    <color name="colorReservationClosed">#bdbdbd</color>
+
+    <color name="colorInputBackground">#20000000</color>
+    <color name="colorInputBackgroundBase">@color/colorInputBackground</color>
+
+    <color name="colorHomeNavigatorGradientStart">@color/colorToolbarGradientStart</color>
+    <color name="colorHomeNavigatorGradientEnd">@color/colorToolbarGradientEnd</color>
+
+    <color name="tabTextColor">#e0e0e0</color>
+    <color name="tabSelectedTextColor">@color/colorAccent</color>
+
+    <color name="colorBackgroundWeekTerm">@color/colorBackground</color>
+    <color name="colorBackgroundWeekTermHeaderFree">@color/colorAccent</color>
+    <color name="colorBackgroundWeekTermHeaderFull">@color/colorBackgroundSecondary</color>
+    <color name="colorTextWeekTermHeader">@color/colorAccentContrast</color>
+    <color name="colorSelectedTabUnderline">@color/colorAccent</color>
+
+    <color name="colorTextBottomNavigation">@color/colorBackgroundSecondary</color>
+    <color name="colorTextBottomNavigationSelected">@color/colorBackground</color>
+
+    <color name="colorArrowRight">#000000</color>
+    <color name="colorPeriodicityValue">@color/colorBackgroundSecondary</color>
+    <color name="colorGoPayText">#2d2a26</color>
+    <color name="colorSelectedSpinnerItem">@color/colorPrimary</color>
+
+    <color name="colorTextHomeItems">@color/colorTextLight</color>
+    <color name="colorLoginInputText">@color/colorTextLight</color>
+    <!--****-->
+    <color name="colorBackgroundLaunch">@color/colorBackground</color>
+    <color name="colorDialogBackgroundLight">#f0f0f0</color>
+    <color name="colorHorizontalDivider">#c0c0c0</color>
+    <color name="colorIconInstructorInfoBackground">#ffffff</color>
+    <color name="colorNavigationHeaderText">@color/colorTextLight</color>
+    <color name="colorPermanentLoginText">@color/colorTextLight</color>
+    <color name="colorForgotPasswordText">@color/colorTextLight</color>
+    <color name="colorWarningMoreSports">#dd0000</color>
+    <color name="colorDeleteButton">#dd0000</color>
+</resources>

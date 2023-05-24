@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="structureSize">
+        <item quantity="one">%d položka</item>
+        <item quantity="two">%d položky</item>
+        <item quantity="few">%d položky</item>
+        <item quantity="many">%d položek</item>
+        <item quantity="other">%d položek</item>
+    </plurals>
+
+    <plurals name="year">
+        <item quantity="one">%d rok</item>
+        <item quantity="two">%d roky</item>
+        <item quantity="few">%d roky</item>
+        <item quantity="many">%d roků</item>
+        <item quantity="other">%d roků</item>
+    </plurals>
+
+    <plurals name="month">
+        <item quantity="one">%d měsíc</item>
+        <item quantity="two">%d měsíce</item>
+        <item quantity="few">%d měsíce</item>
+        <item quantity="many">%d měsíců</item>
+        <item quantity="other">%d měsíců</item>
+    </plurals>
+
+    <plurals name="day">
+        <item quantity="one">%d den</item>
+        <item quantity="two">%d dny</item>
+        <item quantity="few">%d dny</item>
+        <item quantity="many">%d dnů</item>
+        <item quantity="other">%d dnů</item>
+    </plurals>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Clubspire.Dark" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:listDivider">@drawable/divider</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:buttonStyle">@style/Button</item>
+        <item name="android:editTextStyle">@style/TextInputEditText</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:editTextColor">@color/colorTextLight</item>
+        <item name="android:textColor">@color/colorTextLight</item>
+        <item name="android:textColorHint">@color/colorTextLight</item>
+        <item name="android:textColorLink">@color/colorTextLight</item>
+        <item name="android:textColorPrimary">@color/colorTextLight</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.Clubspire.Light" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+
+        <item name="android:textSize">@dimen/text</item>
+        <item name="android:listDivider">@drawable/divider</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="android:editTextColor">@color/colorText</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColorHint">@color/colorText</item>
+        <item name="android:textColorLink">@color/colorText</item>
+        <item name="android:textColorPrimary">@color/colorText</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.Clubspire.Light">
+    </style>
+
+    <style name="Theme.App.NoTile">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.App.Launch" parent="Theme.App.NoTile">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <style name="Theme.App.Login" parent="Theme.Clubspire.Dark">
+        <item name="android:windowBackground">@drawable/bg</item>
+    </style>
+
+    <style name="Theme.App.Home" parent="Theme.Clubspire.Dark"/>
+</resources>

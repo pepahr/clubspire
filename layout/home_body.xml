@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundHome">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_2dp"
+        android:layout_marginEnd="@dimen/margin_4dp"
+        android:layout_marginLeft="@dimen/margin_4dp"
+        android:layout_marginRight="@dimen/margin_4dp"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        app:layout_constraintBottom_toTopOf="@+id/vertical_third_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dashboard_activity"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/calendar_icon"
+                android:layout_width="@dimen/dim_32dp"
+                android:layout_height="@dimen/dim_32dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_weight="@dimen/home_icon_weight"
+                app:tint="@color/colorTextHomeItems"
+                app:srcCompat="@drawable/ic_event_48px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/dash_board_my_reservations_label"
+                android:textColor="@color/colorTextHomeItems"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+
+            <com.clubspire.android.ui.utils.layout.ViewPagerEmptySupportLayout
+                android:id="@+id/home_my_reservations_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/home_text_weight"
+                android:textColor="@color/colorTextHomeItems" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_2dp"
+        android:layout_marginEnd="@dimen/margin_4dp"
+        android:layout_marginLeft="@dimen/margin_4dp"
+        android:layout_marginRight="@dimen/margin_4dp"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:background="@drawable/dashboard_news"
+        app:layout_constraintBottom_toTopOf="@+id/vertical_third_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vertical_third_top"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dashboard_news"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dim_32dp"
+                android:layout_height="@dimen/dim_32dp"
+                android:layout_gravity="center"
+                android:layout_weight="@dimen/home_icon_weight"
+                app:tint="@color/colorTextHomeItems"
+                app:srcCompat="@drawable/ic_chrome_reader_mode_48px"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="@string/dash_board_latest_news_label"
+                android:textColor="@color/colorTextHomeItems"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold" />
+
+            <com.clubspire.android.ui.utils.layout.ViewPagerEmptySupportLayout
+                android:id="@+id/home_last_news_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/home_text_weight" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_third_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.39"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_third_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:layout_marginEnd="@dimen/margin_4dp"
+        android:layout_marginLeft="@dimen/margin_4dp"
+        android:layout_marginRight="@dimen/margin_4dp"
+        android:layout_marginStart="@dimen/margin_4dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vertical_third_bottom"
+        app:cardCornerRadius="16dp">
+
+        <com.clubspire.android.ui.utils.layout.RecyclerViewEmptySupportLayout
+            android:id="@+id/home_favorites"
+
+            android:background="@drawable/dashboard_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/vertical_third_bottom"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="start|end"
+                android:layout_margin="@dimen/margin_8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/vertical_third_bottom"
+                app:srcCompat="@drawable/ic_favorite_24px"
+                app:tint="@color/colorHeart" />
+
+        </com.clubspire.android.ui.utils.layout.RecyclerViewEmptySupportLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/number_of_reservations"
+        android:layout_width="32dp"
+        android:layout_height="30dp"
+        android:layout_margin="@dimen/margin_16dp"
+        android:translationZ="90dp"
+        android:background="@drawable/circle_accent"
+        android:gravity="center"
+        android:textColor="@color/colorAccentSecondaryContrast"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_create_reservation_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/BuyBenefitOrReservationButton"
+        android:translationZ="90dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:backgroundTint="@color/colorButtonBenefitsBackground"
+        android:text="@string/new_reservation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

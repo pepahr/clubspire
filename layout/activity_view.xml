@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_176dp"
+    app:cardBackgroundColor="@color/colorBackground"
+    app:cardUseCompatPadding="true"
+    style="@style/ReservableCard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_16dp"
+        android:background="@color/colorReservableCardBackground"
+        style="@style/ReservableCard.Layout">
+
+        <ImageView
+            android:id="@+id/activity_icon"
+            android:layout_width="@dimen/dim_56dp"
+            android:layout_height="@dimen/dim_56dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:tint="@color/colorActivityItem" />
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_4dp"
+            android:gravity="center"
+            android:textSize="@dimen/text"
+            android:textColor="@color/colorActivityItemText" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

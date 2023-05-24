@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:showIn="@layout/activity_reservation">
+
+    <ImageView
+        android:id="@+id/reservation_image"
+        android:layout_width="@dimen/dim_48dp"
+        android:layout_height="@dimen/dim_48dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:src="@drawable/ic_activity_default"
+        app:tint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/reservation_activity"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dim_56dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_big"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/reservation_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:text="Jungle - privátní sauna s parní kabinou a vířivou vanou" />
+
+    <View
+        android:id="@+id/reservation_activity_divider"
+        style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_activity"/>
+
+    <TextView
+        android:id="@+id/reservation_spinner_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="@string/reservation_choose_sport_label"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_activity_divider"/>
+
+    <Spinner
+        android:id="@+id/reservation_spinner_sport"
+        style="@style/Spinner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_spinner_label"/>
+
+    <ScrollView
+        android:id="@+id/reservation_scroll_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/reservation_scroll_view_divider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_spinner_sport"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_8dp"
+            android:paddingTop="@dimen/padding_8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reservation_image_instructor"
+                android:layout_width="@dimen/dim_56dp"
+                android:layout_height="@dimen/dim_56dp"
+                android:layout_marginLeft="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_8dp"
+                android:paddingTop="@dimen/margin_8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_activity_default"/>
+
+            <ImageView
+                android:id="@+id/reservation_icon_capacity"
+                android:layout_width="@dimen/dim_24dp"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginStart="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                app:tint="@color/colorAccentSecondary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_instructor"
+                app:srcCompat="@drawable/ic_people_24px"/>
+
+            <ImageView
+                android:id="@+id/reservation_icon_sport"
+                android:layout_width="@dimen/dim_24dp"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginStart="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                app:tint="@color/colorAccentSecondary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_capacity"
+                app:srcCompat="@drawable/ic_fitness_center_24px"/>
+
+            <ImageView
+                android:id="@+id/reservation_icon_term"
+                android:layout_width="@dimen/dim_24dp"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginStart="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                app:tint="@color/colorAccentSecondary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_sport"
+                app:srcCompat="@drawable/ic_event_24px"/>
+
+            <ImageView
+                android:id="@+id/reservation_icon_object"
+                android:layout_width="@dimen/dim_24dp"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginStart="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_term"
+                app:srcCompat="@drawable/ic_dashboard_24px"
+                app:tint="@color/colorAccentSecondary" />
+
+            <ImageView
+                android:id="@+id/reservation_icon_price"
+                android:layout_width="@dimen/dim_24dp"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/margin_24dp"
+                android:layout_marginStart="@dimen/margin_24dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_object"
+                app:srcCompat="@drawable/ic_attach_money_24px"
+                app:tint="@color/colorAccentSecondary" />
+
+            <TextView
+                android:id="@+id/reservation_value_instructor"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_56dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:gravity="center_vertical"
+                app:layout_constraintLeft_toRightOf="@id/reservation_image_instructor"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Jméno instruktora"/>
+
+            <TextView
+                android:id="@+id/reservation_value_capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center"
+                android:paddingEnd="@dimen/padding_8dp"
+                android:paddingLeft="@dimen/padding_8dp"
+                android:paddingRight="@dimen/padding_8dp"
+                android:paddingStart="@dimen/padding_8dp"
+                app:layout_constraintLeft_toRightOf="@id/reservation_icon_capacity"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_instructor"
+                tools:text="10/10"/>
+
+            <TextView
+                android:id="@+id/reservation_value_sport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toRightOf="@id/reservation_icon_sport"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_capacity"
+                tools:text="110 raději sněhobílý biologa přinášíme a velryb dostáváme"/>
+
+            <TextView
+                android:id="@+id/reservation_value_term"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintLeft_toRightOf="@id/reservation_icon_term"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_sport"
+                tools:text="1. 1. 2018"/>
+
+            <TextView
+                android:id="@+id/reservation_value_object"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintLeft_toRightOf="@id/reservation_icon_object"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_term"
+                tools:text="Místnost"/>
+
+            <TextView
+                android:id="@+id/reservation_value_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_24dp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:gravity="center_vertical"
+                app:layout_constraintLeft_toRightOf="@id/reservation_icon_price"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_object"
+                tools:text="1000,-"/>
+
+            <TextView
+                android:id="@+id/warning_more_sports"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_36dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_24dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWarningMoreSports"
+                android:textSize="@dimen/text_tiny"
+                app:layout_constraintTop_toBottomOf="@id/reservation_value_price"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/warning_more_sports" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/reservation_instructor_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="reservation_image_instructor,reservation_value_instructor"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/reservation_capacity_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="reservation_icon_capacity,reservation_value_capacity"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/reservation_sport_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="reservation_icon_sport,reservation_value_sport"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/reservation_term_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="reservation_icon_term,reservation_value_term"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/reservation_object_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="reservation_icon_object,reservation_value_object"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/reservation_price_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="reservation_icon_price,reservation_value_price"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/reservation_scroll_view_divider"
+        style="@style/Divider"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginRight="@dimen/margin_16dp"
+        app:layout_constraintBottom_toTopOf="@id/reservation_option_barrier"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/reservation_activity_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="reservation_icon,reservation_activity"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/reservation_sport_list_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="reservation_spinner_sport,reservation_spinner_label"/>
+</merge>

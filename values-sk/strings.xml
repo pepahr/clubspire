@@ -1,0 +1,278 @@
+<resources>
+    <!-- menu -->
+    <string name="menu_open">Otvoriť</string>
+    <string name="menu_close">Zavrieť</string>
+    <string name="menu_my_account_button">Môj účet</string>
+    <string name="menu_my_profile_button"> Môj profil</string>
+    <string name="menu_my_reservations_button">Moje rezervácie</string>
+    <string name="menu_qr_button">QR kód</string>
+    <string name="menu_notifications_button">Oznámenie</string>
+    <string name="menu_log_out_button">Odhlásiť</string>
+    <string name="menu_contact_button">Kontakt</string>
+
+    <!-- login -->
+    <string name="login_login_label">Prihlasovacie meno</string>
+    <string name="login_password_label">Heslo</string>
+    <string name="login_login_button">Prihlásiť</string>
+    <string name="login_register_button">Registrovať</string>
+    <string name="login_forgot_password_button">Zabudli ste heslo?</string>
+    <string name="login_invalid_credentials_error">Prihlasovacie údaje sú neplatné! Ak problém pretrváva, kontaktujte Vaše centrum.</string>
+    <string name="login_persistent_label">Trvalé prihlásenie</string>
+
+    <!--registration-->
+    <string name="registration_title">Registrácia</string>
+    <string name="registration_credentials_label">Prihlasovacie údaje</string>
+    <string name="registration_password_label">Heslo</string>
+    <string name="registration_password_check_label">Heslo znovu</string>
+    <string name="registration_agree_terms_and_conditions_label">súhlasím s <u>prevádzkovým poriadkom a so spracovaním osobných údajov</u> *</string>
+    <string name="registration_terms_and_conditions_error"> Musíte súhlasiť s prevadzovým poriadkom a so spracovaním osobných údajov</string>
+
+    <!-- activation -->
+    <string name="activation_title">Aktivácia účtu</string>
+
+    <!-- reset password -->
+    <string name="reset_password_title">Obnovenie hesla</string>
+    <string name="reset_password_perex">Do poľa nižšie zadajte váš e-mail, ktorý ste uviedli pri registrácii. Zašleme Vám odkaz pre vygenerovanie nového hesla.</string>
+    <string name="reset_password_email_label">E-mail</string>
+    <string name="reset_password_send_password_button">Zaslať odkaz</string>
+    <string name="reset_password_new_password_label">Nové heslo</string>
+    <string name="reset_password_check_password_label">Heslo znovu</string>
+    <string name="reset_password_change_button">Zmeniť heslo</string>
+    <string name="reset_password_token_link_is_invalid_error">Odkaz na zmenu hesla je neplatný</string>
+
+    <!--dashboard -->
+    <string name="dash_board_my_reservations_label">Moje rezervácie</string>
+    <string name="dash_board_latest_news_label">Novinky</string>
+    <string name="dash_board_no_reservations">Nemáte žiadne rezervácie</string>
+    <string name="dash_board_no_news">Žiadne novinky</string>
+    <string name="dash_board_no_favorite_activities">Nemáte žiadne obľúbené aktivity</string>
+
+    <!-- news -->
+    <string name="news_title">Novinky</string>
+
+    <!--notifications-->
+    <string name="notification_title">Oznámenie</string>
+    <string name="notification_no_notifications">Nemáte žiadne oznámenie</string>
+    <string name="notification_dismissed">Oznámenie archivované</string>
+    <string name="notification_read">Oznámenie označené ako prečítané</string>
+    <string name="notification_default_channel_name" translatable="true">Oznámenie</string>
+    <string name="notification_reservation_channel_name" translatable="true">Rezervácie</string>
+    <string name="notification_account_channel_name" translatable="true">Môj účet</string>
+    <string name="notification_news_channel_name" translatable="true">Novinky</string>
+    <string name="notification_show_button">Zobraziť</string>
+
+    <!--payments-->
+    <string name="payment_title">Platba</string>
+    <string name="payment_deposit_payment">Platba depozitom</string>
+    <string name="payment_deposit_balance_label">aktuálny stav depozitu</string>
+    <string name="payment_amount_for_payment_label">čiastka k úhrade</string>
+    <string name="payment_deposit_balance_after_reservation_payment_label">depozit po zaplatení</string>
+    <string name="payment_credit_card_payment">Platba online</string>
+    <string name="payment_credit_cart_redirection">Po kliknutí budete presmerovaný na platebnú bránu</string>
+    <string name="payment_pay_button">Zaplatiť</string>
+    <string name="payment_charge_button">Dobiť</string>deposit
+    <string name="payment_amount_with_tax_label">Čiastka s DPH</string>
+    <string name="payment_action_label">Vykonať akciu</string>
+    <string name="payment_no_payment_type_selected">Nie je vybraný typ platby</string>
+    <string name="payment_insufficient_deposit">Pre platbu nemáte dostatočný depozit</string>
+    <string name="payment_no_payment_type_allowed">Pre platbu nie je možné využiť žiadny typ platby</string>
+
+    <!-- my account -->
+    <string name="my_account_title">Môj účet</string>
+
+    <!--deposit-->
+    <string name="deposit_title">Deposit</string>
+    <string name="deposit_charge_title">Dobiť depozit</string>
+    <string name="deposit_deposit_label">Aktuálny stav depozitu</string>
+    <string name="deposit_add">vklad</string>
+    <string name="deposit_withdraw">výber</string>
+    <string name="deposit_add_cancellation">storno vkladu</string>
+    <string name="deposit_withdraw_cancellation">storno výberu</string>
+    <string name="deposit_expiration">expirácia depozitu</string>
+    <string name="deposit_withdraw_deposit_balance">výber zostatku depozitu</string>
+    <string name="deposit_withdraw_deposit_balance_cancellation">storno výberu zostatku depozitu</string>
+    <string name="deposit_expiration_cancellation">storno expirácie depozitu</string>
+    <string name="deposit_not_defined">n/a</string>
+    <string name="deposit_valid_to_label">Platnosť do</string>
+    <string name="deposit_minimal_value_error">Čiastka musí byť kladné číslo</string>
+
+    <!-- season_ticket -->
+    <string name="season_ticket_title">Permanentky</string>
+    <string name="season_ticket_no_season_ticket">Nemáte žiadne permanentky</string>
+    <string name="season_ticket_buy_title">Kúpiť permanentku</string>
+    <string name="season_ticket_detail_title">Permanentka</string>
+    <string name="season_ticket_valid_from_label">Platnosť od</string>
+    <string name="season_ticket_valid_to_label">Platnosť do</string>
+    <string name="season_ticket_remains_label">Zostáva</string>
+    <string name="season_ticket_structure_label">Zloženie</string>
+    <string name="season_ticket_history">História čerpania</string>
+    <string name="season_ticket_form_choose_season_ticket_label">Vyberte permanentku</string>
+    <string name="season_ticket_form_validity_label">Platná do</string>
+    <string name="season_ticket_form_price_label">Cena</string>
+    <string name="season_ticket_without_limitation">bez omedzenia</string>
+    <string name="season_ticket_item_valid_to_label">platná do</string>
+    <string name="season_ticket_item_paid_label">zaplatené</string>
+    <string name="season_ticket_item_availability_label">jednotiek</string>
+
+    <!--membership-->
+    <string name="memberships_title">Členstvo</string>
+    <string name="membership_payment_label">Platba za členstvo</string>
+    <string name="membership_buy_title">Kúpiť členstvo</string>
+    <string name="membership_choose_membership_label">Vyberte členstvo</string>
+    <string name="membership_choose_membership_type_label">Vyberte typ členstva</string>
+    <string name="membership_valid_from_label">Platnosť od</string>
+    <string name="membership_repayment_label">Splátka za členstvo</string>
+    <string name="membership_price_label">Cena</string>
+    <string name="membership_no_membership">Nemáte žiadne členstvo</string>
+    <string name="membership_history">história</string>
+    <string name="membership_due_date">splatnosť</string>
+    <string name="membership_paid">zaplatené</string>
+    <string name="membership_unpaid">nezaplatené</string>
+
+    <!-- my profile -->
+    <string name="my_profile_edit_title">Editácia profilu</string>
+    <string name="my_profile_username_label">Uživateľské meno</string>
+    <string name="my_profile_name_label">Meno</string>
+    <string name="my_profile_surname_label">Priezvisko</string>
+    <string name="my_profile_street_label">Ulica</string>
+    <string name="my_profile_no_label">Č. p.</string>
+    <string name="my_profile_city_label">Mesto</string>
+    <string name="my_profile_zip_code_label">PSČ</string>
+    <string name="my_profile_country_label">Štát</string>
+    <string name="my_profile_phone_code_label">Predvoľba</string>
+    <string name="my_profile_phone_label">Telefón</string>
+    <string name="my_profile_email_label">E-mail</string>
+    <string name="my_profile_date_of_birth_label">Dátum narodenia</string>
+    <string name="my_profile_sex_label">Pohlavie</string>
+    <string name="my_profile_password_label">Heslo k účtu</string>
+    <string name="my_profile_current_password_label">Aktuálne heslo</string>
+    <string name="my_profile_new_password_label">Nové heslo</string>
+    <string name="my_profile_password_check_label">Heslo znovu</string>
+    <string name="my_profile_woman_label">žena</string>
+    <string name="my_profile_man_label">muž</string>
+    <string name="my_profile_save_button">Uložiť</string>
+    <string name="my_profile_birthday_error">Chyba pri uložení dátumu narodenia</string>
+
+    <!--contact -->
+    <string name="contact_title">Kontakty</string>
+    <string name="contact_address_label">Adresa</string>
+    <string name="contact_contact_label">Kontakt</string>
+    <string name="contact_web_label">Web</string>
+    <string name="contact_social_label">Sociálne siete</string>
+
+    <!-- my reservations -->
+    <string name="my_reservation_title">Moje rezervácie</string>
+    <string name="my_reservation_actual_title">Aktuálne</string>
+    <string name="my_reservation_history_title">História</string>
+    <string name="my_reservation_substitute_title">Náhradník</string>
+
+    <!-- reservation -->
+    <string name="reservation_reservable_title">Zvoľte činnosť</string>
+    <string name="reservation_week_schedule_title">Týždenný rozvrh</string>
+    <string name="reservation_title">Rezervácie</string>
+    <string name="reservation_substitute_title">Rezervácia ako náhradník</string>
+    <string name="reservation_submit_button">Rezervovať</string>
+    <string name="reservation_pay_button">K platbe</string>
+    <string name="reservation_update_button">Uložiť</string>
+    <string name="reservation_cancel_button">Stornovať</string>
+    <string name="reservation_create_and_send_notification">Pri uvolnení miesta automaticky rezervovať</string>
+    <string name="reservation_just_send_notification">Len zaslať upozornenie</string>
+    <string name="reservation_automatic_acceptance"> V prípade, že sa uvolní miesto, chcem byť záväzne rezervovaný najneskôr X hodín dopredu</string>
+    <string name="reservation_choose_sport_label">Zvoľte činnosť</string>
+    <string name="reservation_note_label">Poznámka</string>
+    <string name="reservation_total_label">Celkovo</string>
+    <string name="reservation_count_label">Počet osôb</string>
+    <string name="reservation_duration_label">Dĺžka</string>
+    <string name="reservation_status_new">nová</string>
+    <string name="reservation_status_substitute">náhradník</string>
+    <string name="reservation_status_paid">zaplatená</string>
+    <string name="reservation_status_unpaid">nezaplatená</string>
+    <string name="reservation_status_canceled">stornovaná</string>
+    <string name="reservation_was_canceled">Rezervácia bola zrušená</string>
+    <string name="reservation_is_over">Lekcia už prebehla</string>
+    <string name="reservation_is_now">Lekcia práve prebieha</string>
+    <string name="reservation_not_reservable">Rezerváciu nie je možné vytvoriť</string>
+    <string name="reservation_search_button">Vyhľadať</string>
+    <string name="searchable_hint">Vyhľadávanie</string>
+    <string name="reservation_select_date_button">Zmeniť dátum</string>
+    <string name="reservation_cancel_confirm">Naozaj chcete stornovať túto rezerváciu?</string>
+    <string name="reservation_update_confirm"> Naozaj chcete upraviť túto rezerváciu?</string>
+    <string name="reservation_cancellation_fee_confirm">Tato akcia je nevratná a môže byť účtovaný storno poplatok v hodnote</string>
+    <string name="reservation_waiting_cancellation_fee_confim">Táto akcia je nevratná a môže byt účtovaný čakajúci storno poplatok v hodnote</string>
+    <string name="reservation_substitute_reservation_confirm">Po rezervácií vám bude zaslané upozornenie</string>
+    <string name="reservation_update_fee_confirm">Táto akcia je nevratná a môže vám byť účtovaný poplatok v hodnote</string>
+    <string name="reservation_no_lessons">Vo vybranom termíne už nie sú žiadne lekcie. Prosím, vyberte si iný termín.</string>
+    <string name="reservation_person_label">osoba</string>
+    <string name="reservation_minimal_label">min</string>
+    <string name="reservation_place_label">Miestnosť</string>
+    <string name="reservation_sport_label">Činnosť</string>
+    <string name="reservation_cannot_change_week_error">Nie je možné vybrať týždeň v minulosti</string>
+
+    <!-- TnC -->
+    <string name="terms_and_conditions_title">Prevádzkový poriadok</string>
+
+    <!-- QR code -->
+    <string name="qr_code_label">QR kód</string>
+    <string name="show_qr_code_label">ZOBRAZ\nQR KÓD</string>
+
+    <!-- all -->
+    <string name="all_cancel">Zrušiť</string>
+    <string name="all_ok">OK</string>
+    <string name="all_invalid_password">Heslo musí mať aspoň 6 znakov</string>
+    <string name="all_invalid_password_check">Heslá sa nezhodujú</string>
+    <string name="all_invalid_email">Neplatný e-mail</string>
+    <string name="all_required_field">Toto pole je povinné</string>
+    <string name="all_unauthenticated">Platnosť vašeho prihlásenia vypršala</string>
+    <string name="all_error_api">Vaša požiadavka nemohla byť vybavená. Skúste to prosím znovu.</string>
+    <string name="all_no_api_connection">Rezervačný systém nie je dostupný</string>
+    <string name="all_no_internet_connection">Nie ste pripojený k internetu</string>
+
+    <string-array name="all_phone_codes">
+        <item>+421</item>
+        <item>+420</item>
+    </string-array>
+    <string name="my_profile_registration_number_label">Registračné číslo</string>
+    <string name="reservation_whole_schedule">Celý rozvrh</string>
+    <string name="free_places">voľné miesta</string>
+    <string name="free_place">voľné miesto</string>
+    <string name="free_places_more_than_four">voľných miest</string>
+    <string name="unlimited">neobmedzene</string>
+    <string name="terms_and_conditions_label">Obchodné podmienky</string>
+    <string name="contact_terms_and_conditions">prevádzkový poriadok a obchodné podmienky</string>
+    <string name="valid_unlimited">Platný neobmedzene</string>
+    <string name="reservation_cannot_change_day_error">Nie je možné vybrať deň v minulosti</string>
+    <string name="reservation_status_realised">realizovaná</string>
+    <string name="my_profile_registration_legend">*povinné polia</string>
+    <string name="menu_price_list_button">Cenník</string>
+    <string name="menu_information_label">Informace</string>
+    <string name="menu_members_section_button">Členská sekcia</string>
+    <string name="menu_help_button">Nápoveda</string>
+    <string name="menu_faq_button">Často kladené otázky</string>
+    <string name="menu_gdpr_button">Súkromie</string>
+    <string name="menu_terms_button">Obchodné podmienky</string>
+
+    <string name="price_list_label">Cenník</string>
+    <string name="members_section_label">Členská sekcia</string>
+    <string name="help_label">Nápoveda</string>
+    <string name="faq_label">Často kladené otázky</string>
+    <string name="gdpr_label">Súkromie</string>
+    <string name="no_activity_dates_available_in_three_months">V nasledujúcich troch mesiacoch nie sú k dispozícii žiadne termíny tejto činnosti.</string>
+    <string name="redirection_to_available_lesson_date">Prebieha presmerovanie na prvý dostupný dátum aktivity.</string>
+    <string name="reservation_get_information_button">Otvoriť informácie o aktivite</string>
+    <string name="buy_membership">Kúpiť členstvo</string>
+    <string name="buy_season_ticket">Kúpiť permanentku</string>
+    <string name="add_deposit">Dobiť depozit</string>
+    <string name="new_reservation">Nová rezervácia</string>
+    <string name="agree_with_terms_and_conditions">Kliknutím na tlačidlo zaplatiť súhlasíte s <u>obchodnými podmienkami</u>.</string>
+    <string name="agree_with_terms_and_conditions_deposit">Kliknutím na tlačidlo dobiť súhlasíte s <u>obchodnými podmienkami</u>.</string>
+    <string name="payment_season_ticket_payment">Platba permanentkou</string>
+    <string name="payment_season_ticket_amount_of_usable_impulses">použiteľných impulzov</string>
+    <string name="payment_season_ticket_amount_of_impulses_after_payment">impulzov po zaplatení</string>
+    <string name="payment_season_ticket_amount_of_needed_impulses">potrebný počet impulzov</string>
+    <string name="warning_more_sports">Varovanie: Vytvárate rezerváciu, ktorá prechádza cez viac pásiem otváracej doby objektu. Cena sa môže líšiť!</string>
+    <string name="error_deactivation_failed">epodarilo sa vymazať používateľa. Skúste to prosím znova.</string>
+    <string name="user_deactivated">Užívateľ bol úspešne vymazaný.</string>
+    <string name="user_deactivate_confirm">Naozaj chcete vymazať Váš užívateľský účet?</string>
+    <string name="reservation_too_late">Nie je možné vytvoriť rezerváciu takto neskoro pred začiatkom!</string>
+</resources>
+

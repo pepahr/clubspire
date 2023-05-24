@@ -1,0 +1,29 @@
+<resources>
+    <dimen name="margin_8dp">6dp</dimen>
+    <dimen name="margin_16dp">12dp</dimen>
+    <dimen name="margin_24dp">20dp</dimen>
+    <dimen name="margin_32dp">28dp</dimen>
+    <dimen name="margin_48dp">44dp</dimen>
+    <dimen name="margin_72dp">68dp</dimen>
+
+    <dimen name="padding_8dp">6dp</dimen>
+    <dimen name="padding_16dp">12dp</dimen>
+    <dimen name="padding_24dp">20dp</dimen>
+    <dimen name="padding_32dp">28dp</dimen>
+
+    <dimen name="text_tiny">11sp</dimen>
+    <dimen name="text_small">13sp</dimen>
+    <dimen name="text">15sp</dimen>
+    <dimen name="text_large">17sp</dimen>
+    <dimen name="text_big">19sp</dimen>
+
+    <dimen name="dim_24dp">20dp</dimen>
+    <dimen name="dim_32dp">28dp</dimen>
+    <dimen name="dim_36dp">32dp</dimen>
+    <dimen name="dim_48dp">44dp</dimen>
+    <dimen name="dim_56dp">52dp</dimen>
+    <dimen name="dim_64dp">60dp</dimen>
+    <dimen name="dim_72dp">68dp</dimen>
+    <dimen name="dim_160dp">156dp</dimen>
+    <dimen name="dim_176dp">172dp</dimen>
+</resources>

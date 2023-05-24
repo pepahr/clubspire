@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="home_last_news_lines">1</integer>
+    <integer name="home_favourite_count">5</integer>
+</resources>

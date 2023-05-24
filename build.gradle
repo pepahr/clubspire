@@ -1,0 +1,251 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://clojars.org/repo' }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.google.gms:google-services:4.3.15'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0"
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'org.jetbrains.kotlin.android'
+apply plugin: 'kotlin-parcelize'
+
+android {
+    signingConfigs {
+        clubspire {
+            keyAlias 'clubspire'
+            keyPassword System.getenv("CLUBSPIRE_KEY_PASSWORD")
+            storeFile file(System.getenv("INSPIRE_KEYSTORE_FILE"))
+            storePassword System.getenv("INSPIRE_KEYSTORE_PASSWORD")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlin {
+        jvmToolchain {
+            languageVersion.set(JavaLanguageVersion.of("11"))
+        }
+    }
+
+    flavorDimensions 'versionCode'
+    compileSdkVersion 33
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 33
+        multiDexEnabled true
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+        vectorDrawables.generatedDensities = []
+        buildConfigField 'String', 'API_TEST_URL', '\"http://private-636d3-clubspire.apiary-mock.com\"'
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            ext.enabdleCrashlytics = false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.clubspire
+        }
+    }
+    productFlavors {
+        LukyFitBrno {
+            versionCode 72
+            versionName '2.4.0'
+            applicationId 'com.clubspire.android'
+            resValue 'string', 'app_name', 'Luky Fit Brno'
+            resValue 'string', 'app_id', 'lukyfitbrno'
+            buildConfigField 'String', 'API_BASE_URL', '\"https://api.clubspire.com\"'
+            buildConfigField 'String', 'CLIENT_ID', '\"lukyfitbrno_clientId\"'
+            buildConfigField 'String', 'CLIENT_SECRET', '\"lukyfitbrno_clientSecret123\"'
+            manifestPlaceholders = [
+                    scheme: 'https',
+                    host  : 'api.clubspire.com'
+            ]
+        }
+        KryoBrnicko {
+            versionCode 8
+            versionName '2.4.0'
+            applicationId 'com.clubspire.android.kryobrnicko'
+            resValue 'string', 'app_name', 'Kryo Brnicko'
+            resValue 'string', 'app_id', 'kryobrnicko'
+            buildConfigField 'String', 'API_BASE_URL', '\"https://rezervace.kryoznojmo.cz\"'
+            buildConfigField 'String', 'CLIENT_ID', '\"anotherClientIdValue\"'
+            buildConfigField 'String', 'CLIENT_SECRET', '\"anotherCilentSecretValue\"'
+            manifestPlaceholders = [
+                    scheme: 'https',
+                    host: 'rezervace.kryoznojmo.cz'
+            ]
+        }
+    }
+    androidResources {
+        additionalParameters '--no-version-vectors'
+    }
+    namespace 'com.clubspire.android'
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def flavorName = variant.name.replaceAll("Debug\$", "").replaceAll("Release\$", "")
+            outputFileName = "${flavorName}-${variant.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.9.0'
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
+    kapt 'com.google.dagger:dagger-compiler:2.45'
+    kapt 'com.jakewharton:butterknife-compiler:10.2.1'
+    kapt 'org.parceler:parceler:1.1.13'
+    kapt 'com.hannesdorfmann.fragmentargs:processor:3.0.2'
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'org.apache.commons:commons-text:1.9'
+    implementation 'com.google.android.material:material:1.0.0'
+    // od verze 1.1.0 bude potreba resit zmeny ve vzhledu (pruhlednost fieldu atd.)
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.browser:browser:1.5.0' // verze 1.2.0 uz vyzaduje min api 24
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3' // v novych verzich nejde visibility pro widget group
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.dagger:dagger:2.45'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.google.firebase:firebase-core:17.4.4'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
+    implementation 'com.google.zxing:core:3.3.2'
+    implementation 'io.reactivex:rxjava:1.3.8'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding:1.0.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding-support-v4:1.0.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding-appcompat-v7:1.0.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding-recyclerview-v7:1.0.1'
+    implementation 'com.jakewharton.rxbinding:rxbinding-design:1.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.4' // verze 2.7.0 uz vyzaduje min api 26
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.4' // verze 2.7.0 uz vyzaduje min api 26
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.6.4' // verze 2.7.0 uz vyzaduje min api 26
+    implementation 'com.squareup.okhttp3:okhttp:3.12.12' // verze 3.13.0 uz vyzaduje min api 24
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.12'
+    implementation 'com.squareup.okio:okio:1.17.5' // od verze 2.0 haze chyby
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.jakewharton:butterknife:8.8.1' // od verze 9.0.0 chce min api 24
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation 'com.jakewharton.timber:timber:4.7.0' // od verze 4.7.1 problemove
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'org.parceler:parceler-api:1.1.13'
+    implementation 'com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.0'
+    implementation 'com.shawnlin:number-picker:2.4.5'
+    implementation 'com.hannesdorfmann.fragmentargs:annotation:3.0.2'
+    implementation 'com.hannesdorfmann.fragmentargs:bundler-parceler:3.0.2'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.myinnos:AlphabetIndex-Fast-Scroll-RecyclerView:1.0.92'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.1'
+    implementation 'org.sufficientlysecure:html-textview:4.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-all:1.10.19'
+
+    androidTestImplementation 'org.mockito:mockito-core:2.28.2'
+    androidTestImplementation 'com.linkedin.dexmaker:dexmaker:2.28.3'
+    androidTestImplementation 'com.linkedin.dexmaker:dexmaker-mockito:2.28.1'
+    // Android Testing Support Library's runner and rules
+    kaptAndroidTest 'com.google.dagger:dagger-compiler:2.45'
+    androidTestImplementation('androidx.test.ext:junit:1.1.5') {
+        exclude group: 'com.android.support'
+    }
+    androidTestImplementation('androidx.test:rules:1.5.0') {
+        exclude group: 'com.android.support'
+    }
+    androidTestImplementation('androidx.test.espresso:espresso-intents:3.5.1') {
+        exclude group: 'com.android.support'
+    }
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support'
+        exclude group: 'com.android.support', module: 'support-annotations'
+    }
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+}
+
+task getLatestAppVersion {
+    doLast {
+        println '2.4.0'
+    }
+}
+
+task getApiUrl {
+    doLast {
+        android.productFlavors.each { flavor ->
+            if (flavor.name == _flavor) {
+                flavor.buildConfigFields.each { key, value ->
+                    if (key == "API_BASE_URL") {
+                        println value.value.replaceAll("^\"|\"\$", "")
+                    }
+                }
+            }
+        }
+    }
+}
+
+task getClientId {
+    doLast {
+        android.productFlavors.each { flavor ->
+            if (flavor.name == _flavor) {
+                flavor.buildConfigFields.each { key, value ->
+                    if (key == "CLIENT_ID") {
+                        println value.value.replaceAll("^\"|\"\$", "")
+                    }
+                }
+            }
+        }
+    }
+}
+
+task getClientSecret {
+    doLast {
+        android.productFlavors.each { flavor ->
+            if (flavor.name == _flavor) {
+                flavor.buildConfigFields.each { key, value ->
+                    if (key == "CLIENT_SECRET") {
+                        println value.value.replaceAll("^\"|\"\$", "")
+                    }
+                }
+            }
+        }
+    }
+}
+
+//pro funkcni popup s informacemi o trenerech je potreba 4.11.5
+task getRequiredClubspireVersion {
+    doLast {
+        println '4.10.9'
+    }
+}
+
